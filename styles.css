@@ -1,0 +1,73 @@
+body {
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+}
+
+#mynetwork {
+    width: 80vw;
+    height: 45vw; /* for 16:9 aspect ratio */
+    margin-bottom: 2    px;
+    border: 1px solid lightgray;
+    background-color: #222323;
+    border-radius: 5px;
+    transition: all 3s; 
+}
+
+#control-panel {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background-color: #131313;
+    color: #FFF;
+
+    border-radius: 5px;
+}
+
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background-color: #131313;
+    color: #FFF;
+}
+
+#resetBtn {
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    button {
+        padding: 20px;
+        font-size: 18px;
+        width: 100%;
+    }
+    #control-panel {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mynetwork {
+        width: 90vh;
+        height: 65vh;  /* maintain 9:16 aspect ratio */
+        margin-bottom: 245px;
+        transform: rotate(0deg);
+    }
+}
